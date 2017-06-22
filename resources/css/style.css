@@ -322,6 +322,12 @@ nav li {
   padding-bottom: 1rem;
 }
 
+@media only screen and (min-width:480px) {
+  .left-column-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width:480px) {
   .thesis-container-desktop {
     display: none;
@@ -347,6 +353,7 @@ footer span {
   align-items: center;
   margin-bottom: 4rem;
 }
+
 @media only screen and (max-width:480px) {
   .footer-desktop {
     display: none;
