@@ -39,34 +39,33 @@ p {
   line-height: 1.25rem;
 }
 
-/***** Header Desktop *****/
-.header-desktop {
-  width: 100%;
+.desktop {
+  width: 1024px;
+}
+
+.mobile {
+  width: 480px;
+}
+
+/***** Header  *****/
+header {
   height: 4rem;
   display: flex;
   align-items: center;
 }
 
-.header-desktop span {
+header span {
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.header-desktop .academy {
+.academy {
   color: Gainsboro;
   font-weight: 600;
 }
 
-.header-desktop img {
+header img {
   padding-left: 1.5rem;
-}
-
-.header-mobile {
-  width:100%;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 /* navigation */
@@ -81,25 +80,12 @@ nav ul {
 }
 
 nav li {
-  padding-right: 1rem;
-}
-
-@media only screen and (min-width:480px) {
-  .header-mobile {
-    display: none;
-  }
-}
-
-@media only screen and (max-width:480px) {
-  .header-desktop {
-    display: none;
-  }
+  padding-left: 1rem;
 }
 
 /***** Main *****/
 /* banner */
 .banner-container {
-  width: 100%;
   display: flex;
   background-color: Gainsboro;
 }
@@ -114,8 +100,7 @@ nav li {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding-right: 6rem;
-  margin-right: 1.5rem;
+  margin-right: 6rem;
 }
 
 .banner-right-container h3 {
@@ -129,26 +114,6 @@ nav li {
   margin-top: 2rem;
 }
 
-@media only screen and (max-width:480px) {
-  .banner-container {
-    display: flex;
-    flex-flow: column;
-  }
-  .banner-container img {
-    width: 100%;
-    height: 180px;
-    padding: 0rem;
-    margin: 0rem;
-  }
-  .banner-right-container {
-    margin-left : 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  .banner-right-container button {
-    margin-top : 1.5rem;
-  }
-}
 /* information */
 .info-container {
   display: flex;
@@ -205,22 +170,6 @@ nav li {
 #guest {
   background-color: Gainsboro;
 }
-
-@media only screen and (max-width:480px) {
-  .left-column  {
-    display: none;
-  }
-  .right-item {
-    display: flex;
-    flex-flow: column;
-    margin: 1rem;
-  }
-  .right-item img {
-    width: 100%;
-    height: 200px;
-  }
-}
-
 
 /* courses */
 .courses {
