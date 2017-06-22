@@ -154,7 +154,8 @@ nav li {
   margin-bottom: 2rem;
 }
 
-.left-column {
+.left-column,
+.left-column-desktop {
   width: 60%;
 }
 
@@ -164,12 +165,14 @@ nav li {
   margin: 32px 40px 32px 24px;
 }
 
-.left-column h2 {
+.left-column h2,
+{
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.left-column p {
+.left-column p,
+.left-column-desktop p {
   padding-left: 1.5rem;
 }
 
@@ -317,7 +320,7 @@ nav li {
   margin: 32px 40px 32px 24px;
 }
 
-.thesis-container-desktop .left-column h3 {
+.thesis-container-desktop .left-column-desktop h3 {
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
