@@ -142,6 +142,7 @@ nav li {
   }
   .banner-right-container {
     margin: 1rem 2rem;
+    padding: 0rem;
   }
   .banner-right-container button {
     margin-top : 1.5rem;
@@ -211,14 +212,23 @@ nav li {
   .right-item {
     display: flex;
     flex-flow: column;
-    margin: 1rem;
+    max-width: 480px;
+    padding: 0rem;
+    margin: 0rem;
   }
   .right-item img {
     width: 100%;
-    height: 200px;
+    height: 180px;
+    object-fit: none;
+    padding: 1rem 0 0 1rem;
+    margin-left: -4.5rem;
+    margin-top: 0rem;
+  }
+  .right-item p,
+  .right-item h3 {
+    padding-left: 1rem;
   }
 }
-
 
 /* courses */
 .courses {
@@ -230,7 +240,7 @@ nav li {
   padding-top: 32px;
 }
 
-.courses-container {
+.courses-container-desktop {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -260,6 +270,33 @@ nav li {
   margin: 0.5rem 0 0.5rem 1rem;
 }
 
+@media only screen and (min-width:480px) {
+  .courses-container-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width:480px) {
+  .courses-container-desktop {
+    display: none;
+  }
+
+  .courses {
+    background-color: white;
+  }
+
+  .courses-container-mobile ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .courses-container-mobile li {
+    padding: 1rem;
+    font-weight: 700;
+    background-color: Gainsboro;
+    margin-top: 0.5rem;
+  }
+}
 /* Thesis */
 .thesis {
   margin-bottom: 2rem;
@@ -270,21 +307,31 @@ nav li {
   margin: 2rem 0;
 }
 
-.thesis-container {
+.thesis-container-desktop {
   display: flex;
 }
 
-.left-column video {
+.left-column-desktop video {
   width: 100%;
   height: auto;
   margin: 32px 40px 32px 24px;
 }
 
-.thesis-container .left-column h3 {
+.thesis-container-desktop .left-column h3 {
   padding-left: 1.5rem;
   padding-bottom: 1rem;
 }
 
+@media only screen and (max-width:480px) {
+  .thesis-container-desktop {
+    display: none;
+  }
+  .left-column-mobile video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
 /***** Footer *****/
 footer {
   display: flex;
@@ -299,4 +346,16 @@ footer span {
   font-size: 0.75rem;
   align-items: center;
   margin-bottom: 4rem;
+}
+@media only screen and (max-width:480px) {
+  .footer-desktop {
+    display: none;
+  }
+
+  footer span {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    white-space: nowrap;
+  }
 }

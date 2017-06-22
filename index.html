@@ -90,7 +90,8 @@
       <!-- Courses -->
       <div class="courses">
         <h2>Start learning</h2>
-        <div class="courses-container">
+        <!-- Courses container for desktop -->
+        <div class="courses-container-desktop">
         <!-- Courses : Software Engineering -->
           <div id="software" class="bottom-item">
             <img src="./resources/images/course-software.jpg" alt="Software Engineering Course">
@@ -145,22 +146,35 @@
              <p>Analytics, Content Marketing, Mobil Marketing</p>
            </div>
          </div> <!-- End of Marketing -->
-       </div> <!-- End of Courses container -->
+       </div> <!-- End of Courses container for desktop-->
+       <!-- Courses container for mobile -->
+       <div class="courses-container-mobile">
+         <nav>
+           <ul>
+             <li><a href="#">Software engineering</a></li>
+             <li><a href="#">Computer art</a></li>
+             <li><a href="#">Design</a></li>
+             <li><a href="#">Data</a></li>
+             <li><a href="#">Business</a></li>
+             <li><a href="#">Marketing</a></li>
+           </ul>
+         </nav>
+       </div> <!-- End of courses container for Mobile -->
       </div> <!-- End of Courses -->
 
       <!--  Thesis  -->
       <!-- Thesis section on the left -->
       <div class="thesis">
-        <h2>Start learning</h2>
-        <div class="thesis-container">
-          <div class="left-column">
+        <h2>Thesis exhibits</h2>
+        <div class="thesis-container-desktop">
+          <div class="left-column-desktop">
             <video src="./resources/videos/thesis.mp4" autoplay muted loop controls>
               Your browser does not support video tag.
             </video>
             <h3>Reimagine urban</h3>
             <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           </div> <!-- End of left-column of Thesis -->
-          <!-- Thesis section on the right side -->
+        <!-- Thesis section on the right side -->
           <div>
           <!-- Thesis about Fisma -->
             <div id="fisma" class="right-item">
@@ -180,13 +194,19 @@
           </div> <!-- End of right column of Thesis -->
         </div> <!-- End of thesis-container  -->
       </div> <!-- End of thesis -->
+      <!-- Thesis mobile -->
+      <div class="left-column-mobile">
+        <video src="./resources/videos/thesis.mp4" autoplay muted loop controls>
+          Your browser does not support video tag.
+        </video>
+      </div> <!-- End of Thesis mobile -->
     </main>
 
     <!-- footer -->
     <footer>
       <span>&copy; 2016 Colmar Academy. All rights reserved.</span>
       <nav>
-        <ul>
+        <ul class="footer-desktop">
           <li><a href="#"><span>Terms</span></a></li>
           <li><a href="#"><span>Privacy</span></a></li>
         </ul>
