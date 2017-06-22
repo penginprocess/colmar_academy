@@ -141,9 +141,7 @@ nav li {
     margin: 0rem;
   }
   .banner-right-container {
-    margin-left : 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 1rem 2rem;
   }
   .banner-right-container button {
     margin-top : 1.5rem;
