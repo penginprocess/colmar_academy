@@ -278,6 +278,7 @@ nav li {
     display: none;
   }
 }
+
 @media only screen and (max-width:480px) {
   .courses-container-desktop {
     display: none;
@@ -335,6 +336,7 @@ nav li {
   .thesis-container-desktop {
     display: none;
   }
+
   .left-column-mobile video {
     display: block;
     width: 100%;
@@ -355,6 +357,7 @@ footer span {
   font-size: 0.75rem;
   align-items: center;
   margin-bottom: 4rem;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width:480px) {
@@ -366,6 +369,5 @@ footer span {
     width: 100%;
     margin-top: 1.5rem;
     padding-top: 1rem;
-    white-space: nowrap;
   }
 }
