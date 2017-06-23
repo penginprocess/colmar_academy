@@ -225,7 +225,7 @@ nav li {
 }
 
 @media only screen and (min-width:480px) {
-  .right-item img.mobile {
+  .mobile {
     display: none;
   }
 }
@@ -235,7 +235,7 @@ nav li {
     display: none;
   }
 
-  .right-item img.desktop {
+  .desktop {
     display: none;
   }
 
