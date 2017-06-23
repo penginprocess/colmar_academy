@@ -244,7 +244,7 @@ nav li {
     flex-flow: column;
     width: 100%;
     padding: 0rem;
-    margin: 0rem;
+    margin: 1rem;
   }
 
   .info-mobile {
