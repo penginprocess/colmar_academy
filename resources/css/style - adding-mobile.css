@@ -2,7 +2,7 @@
 html {
   font-size: 16px;
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: hsl(0, 0%, 35%); /* dark shade of grey */
+  color: #3A3A3A;
 }
 
 .body {
@@ -53,7 +53,7 @@ p {
 }
 
 .header-desktop .academy {
-  color: hsl(0, 0%, 70%);
+  color: Gainsboro;
   font-weight: 600;
 }
 
@@ -101,7 +101,7 @@ nav li {
 .banner-container {
   width: 100%;
   display: flex;
-  background-color: hsl(0, 0%, 85%); /* light shade of grey */
+  background-color: Gainsboro;
 }
 
 .banner-container img {
@@ -124,7 +124,7 @@ nav li {
 
 .banner-right-container button {
   padding: 8px 0;
-  background-color: hsl(0, 0%, 35%); /* dark shade of grey */
+  background-color: #3A3A3A;
   color: white;
   margin-top: 2rem;
 }
@@ -165,7 +165,7 @@ nav li {
   margin: 32px 40px 32px 24px;
 }
 
-.left-column h2
+.left-column h2,
 {
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
@@ -205,7 +205,7 @@ nav li {
 }
 
 #guest {
-  background-color: hsl(0, 0%, 85%); /* light shade of grey */
+  background-color: Gainsboro;
 }
 
 @media only screen and (max-width:480px) {
@@ -231,14 +231,11 @@ nav li {
   .right-item h3 {
     padding-left: 1rem;
   }
-  #guest {
-    background-color: white;
-  }
 }
 
 /* courses */
 .courses {
-  background-color: hsl(0, 0%, 90%); /* very light shade of grey */
+  background-color: Lavender;
 }
 
 .courses h2 {
@@ -300,7 +297,7 @@ nav li {
   .courses-container-mobile li {
     padding: 1rem;
     font-weight: 700;
-    background-color: hsl(0, 0%, 85%); /* light shade of grey */
+    background-color: Gainsboro;
     margin-top: 0.5rem;
   }
 }
