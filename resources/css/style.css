@@ -243,18 +243,20 @@ nav li {
     display: flex;
     flex-flow: column;
     width: 100%;
-    padding: 0rem;
     margin: 1rem;
+    padding: 0rem;
   }
 
   .info-mobile {
     width: 100%;
-    margin-top: 1rem;
+    overflow: hidden;
+    margin: 0rem;
+    padding: 1rem;
   }
 
   .right-item p,
   .right-item h3 {
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   #guest {
@@ -382,6 +384,7 @@ nav li {
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 1.5rem;
   }
 }
 /***** Footer *****/
@@ -411,7 +414,7 @@ footer span {
 
   footer span {
     width: 100%;
-    margin-top: 1.5rem;
-    padding-top: 1rem;
+    margin: 0rem;
+    padding: 1rem;
   }
 }
