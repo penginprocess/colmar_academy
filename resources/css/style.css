@@ -235,23 +235,34 @@ nav li {
     display: none;
   }
 
+  .info-right-section {
+    width: 100%;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 0rem;
+  }
+
   .info-desktop {
     display: none;
+  }
+
+  .info-container {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
 
   .right-item {
     display: flex;
     flex-flow: column;
     width: 100%;
-    margin: 1rem;
     padding: 0rem;
+    margin: 0rem 0rem 1.5rem 0rem;
   }
 
   .info-mobile {
     width: 100%;
     overflow: hidden;
+    padding-bottom: 1rem;
     margin: 0rem;
-    padding: 1rem;
   }
 
   .right-item p,
