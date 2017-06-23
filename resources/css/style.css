@@ -195,7 +195,7 @@ nav li {
   margin-left: 2.5rem;
 }
 
-.right-item img {
+.info-desktop {
   width: 35%;
   height: 35%;
   margin: 1rem;
@@ -225,7 +225,7 @@ nav li {
 }
 
 @media only screen and (min-width:480px) {
-  .mobile {
+  .info-mobile {
     display: none;
   }
 }
@@ -235,18 +235,19 @@ nav li {
     display: none;
   }
 
-  .desktop {
+  .info-desktop {
     display: none;
   }
 
   .right-item {
     display: flex;
     flex-flow: column;
+    width: 100%;
     padding: 0rem;
     margin: 0rem;
   }
 
-  .right-item img {
+  .info-mobile {
     width: 100%;
     margin-top: 1rem;
   }
