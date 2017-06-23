@@ -124,7 +124,7 @@ nav li {
 
 .banner-right-container button {
   padding: 8px 0;
-  background-color: #3A3A3A;
+  background-color: hsl(0, 0%, 35%); /* dark shade of grey */
   color: white;
   margin-top: 2rem;
 }
@@ -165,7 +165,7 @@ nav li {
   margin: 32px 40px 32px 24px;
 }
 
-.left-column h2,
+.left-column h2
 {
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
@@ -205,7 +205,7 @@ nav li {
 }
 
 #guest {
-  background-color: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 85%); /* light shade of grey */
 }
 
 @media only screen and (max-width:480px) {
@@ -232,12 +232,13 @@ nav li {
     padding-left: 1rem;
   }
   #guest {
-    background-color: White;
+    background-color: white;
+  }
 }
 
 /* courses */
 .courses {
-  background-color: Lavender;
+  background-color: hsl(0, 0%, 90%); /* very light shade of grey */
 }
 
 .courses h2 {
@@ -299,7 +300,7 @@ nav li {
   .courses-container-mobile li {
     padding: 1rem;
     font-weight: 700;
-    background-color: hsl(0, 0%, 85%);
+    background-color: hsl(0, 0%, 85%); /* light shade of grey */
     margin-top: 0.5rem;
   }
 }

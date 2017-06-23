@@ -25,8 +25,14 @@ h3, button {
   line-height: 1.5;
 }
 
+h4 {
+  font-size:1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 li {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -35,8 +41,8 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 /***** Header Desktop *****/
@@ -59,6 +65,10 @@ p {
 
 .header-desktop img {
   padding-left: 1.5rem;
+}
+
+.header-desktop a:hover {
+   color: hsl(0, 0%, 70%);
 }
 
 .header-mobile {
@@ -133,12 +143,14 @@ nav li {
   .banner-container {
     display: flex;
     flex-flow: column;
+    align-items: center;
   }
   .banner-container img {
-    width: 100%;
-    height: 180px;
+    width: auto;
+    height: 244px;
     padding: 0rem;
     margin: 0rem;
+    object-fit: contain;
   }
   .banner-right-container {
     margin: 1rem 2rem;
@@ -204,33 +216,48 @@ nav li {
   color: DodgerBlue;
 }
 
+.read-more:visited {
+  color: CodetBlue;
+}
+
 #guest {
   background-color: hsl(0, 0%, 85%); /* light shade of grey */
+}
+
+@media only screen and (min-width:480px) {
+  .right-item img.mobile {
+    display: none;
+  }
 }
 
 @media only screen and (max-width:480px) {
   .left-column  {
     display: none;
   }
+
+  .right-item img.desktop {
+    display: none;
+  }
+
   .right-item {
     display: flex;
     flex-flow: column;
-    max-width: 480px;
     padding: 0rem;
     margin: 0rem;
   }
+
   .right-item img {
+    display: block;
     width: 100%;
-    height: 180px;
-    object-fit: none;
-    padding: 1rem 0 0 1rem;
-    margin-left: -4.5rem;
-    margin-top: 0rem;
+    object-fit: contain;
+    margin-top: 1rem;
   }
+
   .right-item p,
   .right-item h3 {
     padding-left: 1rem;
   }
+
   #guest {
     background-color: white;
   }
@@ -250,6 +277,7 @@ nav li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: auto;
   padding: 1.5rem;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -264,10 +292,11 @@ nav li {
 }
 
 .bottom-item img {
+  width: auto;
   height: 150px;
 }
 
-.bottom-item h3 {
+.bottom-item h4 {
   margin-top: 1rem;
   margin-left: 1rem;
 }
@@ -279,6 +308,10 @@ nav li {
 @media only screen and (min-width:480px) {
   .courses-container-mobile {
     display: none;
+  }
+
+  .course-container-mobile li {
+    font-size: 0.8rem;
   }
 }
 
@@ -299,11 +332,17 @@ nav li {
 
   .courses-container-mobile li {
     padding: 1rem;
+    font-size: 1rem;
     font-weight: 700;
     background-color: hsl(0, 0%, 85%); /* light shade of grey */
     margin-top: 0.5rem;
   }
+
+    .courses-container-mobile a {
+      color: hsl(0, 0%, 35%);
+  }
 }
+
 /* Thesis */
 .thesis {
   margin-bottom: 2rem;
